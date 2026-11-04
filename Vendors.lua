@@ -13,17 +13,15 @@ local module = addon:GetModule(private.module_name)
 local L = _G.LibStub("AceLocale-3.0"):GetLocale(addon.constants.addon_name)
 
 local Z = constants.ZONE_NAMES
-local V = constants.GAME_VERSIONS
 
 -----------------------------------------------------------------------
 -- What we _really_ came here to see...
 -----------------------------------------------------------------------
 function module:InitializeVendors()
-	local function AddVendor(vendorID, vendorName, zoneName, coordX, coordY, faction, expansionID)
+	local function AddVendor(vendorID, vendorName, zoneName, coordX, coordY, faction)
 		addon.AcquireTypes.Vendor:AddEntity(module, {
 			coord_x = coordX,
 			coord_y = coordY,
-			expansionID = expansionID,
 			faction = faction,
 			identifier = vendorID,
 			item_list = {},
@@ -32,78 +30,38 @@ function module:InitializeVendors()
 		})
 	end
 
-	-----------------------------------------------------------------------
-	-- Vanilla
-	-----------------------------------------------------------------------
-	AddVendor(1146,		L["Vharr"],							Z.STRANGLETHORN_VALE,			32.2,	28.0,	"Horde",	V.ORIG)
-	AddVendor(1471,		L["Jannos Ironwill"],				Z.ARATHI_HIGHLANDS,				46.0,	47.6,	"Alliance",	V.ORIG)
-	AddVendor(2482,		L["Zarena Cromwind"],				Z.STRANGLETHORN_VALE,			28.4,	75.4,	"Neutral",  V.ORIG)
-	AddVendor(2483,		L["Jaquilina Dramet"],				Z.STRANGLETHORN_VALE,			35.6, 	10.6,	"Neutral",	V.ORIG)
-	AddVendor(2843,		L["Jutak"],							Z.STRANGLETHORN_VALE,			27.4, 	77.4,	"Neutral",	V.ORIG)
-	AddVendor(2999,		L["Taur Stonehoof"],				Z.THUNDER_BLUFF,				39.8,	55.7,	"Horde",	V.ORIG)
-	AddVendor(3356,		L["Sumi"],							Z.ORGRIMMAR,					82.4, 	23.8,	"Horde",	V.ORIG)
-	AddVendor(4259,		L["Thurgrum Deepforge"],			Z.IRONFORGE,					51.5,	42.7,	"Alliance",	V.ORIG)
-	AddVendor(4597,		L["Samuel Van Brunt"],				Z.UNDERCITY,					61.4,	30.1,	"Horde",	V.ORIG)
-	AddVendor(5411,		L["Krinkle Goodsteel"],				Z.TANARIS,						51.4, 	28.8,	"Neutral",	V.ORIG)
-	AddVendor(5512,		L["Kaita Deepforge"],				Z.STORMWIND_CITY,				56.6, 	17.0,	"Alliance",	V.ORIG)
-	AddVendor(8161,		L["Harggan"],						Z.THE_HINTERLANDS,				13.4,	44.0,	"Alliance",	V.ORIG)
-	AddVendor(8176,		L["Gharash"],						Z.SWAMP_OF_SORROWS,				45.6, 	51.6,	"Horde",	V.ORIG)
-	AddVendor(8878,		L["Muuran"],						Z.DESOLACE,						55.6,	56.5,	"Horde",	V.ORIG)
-	AddVendor(15176,	L["Vargus"],						Z.SILITHUS,						51.2, 	38.8,	"Neutral",	V.ORIG)
-	AddVendor(15471,	L["Lieutenant General Andorov"],	Z.RUINS_OF_AHNQIRAJ,			0.0,	0.0,	"Neutral",	V.ORIG)
 
-	-----------------------------------------------------------------------
-	-- TBC
-	-----------------------------------------------------------------------
-	AddVendor(16388,	L["Koren"],							Z.KARAZHAN,						0.0,	0.0,	"Neutral",	V.TBC)
-	AddVendor(16583,	L["Rohok"],							Z.HELLFIRE_PENINSULA,			53.2,	38.2,	"Horde",	V.TBC)
-	AddVendor(16670,	L["Eriden"],						Z.SILVERMOON_CITY,				80.3,	36.1,	"Horde",	V.TBC)
-	AddVendor(16713,	L["Arras"],							Z.THE_EXODAR,					60.0,	89.5,	"Alliance",	V.TBC)
-	AddVendor(19342,	L["Krek Cragcrush"],				Z.SHADOWMOON_VALLEY_OUTLAND,	28.9,	30.8,	"Horde",	V.TBC)
-	AddVendor(19373,	L["Mari Stonehand"],				Z.SHADOWMOON_VALLEY_OUTLAND,	36.8,	55.1,	"Alliance",	V.TBC)
-	AddVendor(19662,	L["Aaron Hollman"],					Z.SHATTRATH_CITY,				63.1,	71.1,	"Neutral",	V.TBC)
-	AddVendor(19694,	L["Loolruna"],						Z.ZANGARMARSH,					68.5,	50.1,	"Alliance",	V.TBC)
+	AddVendor(1146,		L["Vharr"],							Z.STRANGLETHORN_VALE,			32.2,	28.0,	"Horde")
+	AddVendor(1471,		L["Jannos Ironwill"],				Z.ARATHI_HIGHLANDS,				46.0,	47.6,	"Alliance")
+	AddVendor(2482,		L["Zarena Cromwind"],				Z.STRANGLETHORN_VALE,			28.4,	75.4,	"Neutral")
+	AddVendor(2483,		L["Jaquilina Dramet"],				Z.STRANGLETHORN_VALE,			35.6, 	10.6,	"Neutral")
+	AddVendor(2843,		L["Jutak"],							Z.STRANGLETHORN_VALE,			27.4, 	77.4,	"Neutral")
+	AddVendor(2999,		L["Taur Stonehoof"],				Z.THUNDER_BLUFF,				39.8,	55.7,	"Horde")
+	AddVendor(3356,		L["Sumi"],							Z.ORGRIMMAR,					82.4, 	23.8,	"Horde")
+	AddVendor(4259,		L["Thurgrum Deepforge"],			Z.IRONFORGE,					51.5,	42.7,	"Alliance")
+	AddVendor(4597,		L["Samuel Van Brunt"],				Z.UNDERCITY,					61.4,	30.1,	"Horde")
+	AddVendor(5411,		L["Krinkle Goodsteel"],				Z.TANARIS,						51.4, 	28.8,	"Neutral")
+	AddVendor(5512,		L["Kaita Deepforge"],				Z.STORMWIND_CITY,				63.3, 	37.5,	"Alliance")
+	AddVendor(8161,		L["Harggan"],						Z.THE_HINTERLANDS,				13.4,	44.0,	"Alliance")
+	AddVendor(8176,		L["Gharash"],						Z.SWAMP_OF_SORROWS,				45.6, 	51.6,	"Horde")
+	AddVendor(8878,		L["Muuran"],						Z.DESOLACE,						55.6,	56.5,	"Horde")
+	AddVendor(9179,		L["Jazzrik"],						Z.BADLANDS,						42.6,	52.6,	"Neutral")
+	AddVendor(10856, L["Argent Quartermaster Hasana"], 		Z.TIRISFAL_GLADES, 				83.2, 	68.2, 	"Neutral")
+	AddVendor(10857, L["Argent Quartermaster Lightspark"], 	Z.WESTERN_PLAGUELANDS, 			42.8, 	83.8, 	"Neutral")
+	AddVendor(11278, L["Magnus Frostwake"],					Z.WESTERN_PLAGUELANDS, 			68.0, 	77.6, 	"Neutral")
+	AddVendor(11536, L["Quartermaster Miranda Breechlock"], Z.EASTERN_PLAGUELANDS, 			81.6, 	60.0, 	"Neutral")
+	AddVendor(11557, L["Meilosh"], 							Z.FELWOOD, 						65.6, 	2.8, 	"Neutral")
+	AddVendor(12944, L["Lokhtos Darkbargainer"], 			Z.BLACKROCK_DEPTHS, 			0, 		0, 		"Neutral")
+	AddVendor(14921, L["Rin'wosho the Trader"], 			Z.STRANGLETHORN_VALE, 			15.0, 16.0, 	"Neutral")
+	AddVendor(15176,	L["Vargus"],						Z.SILITHUS,						51.2, 	38.8,	"Neutral")
+	AddVendor(15471,	L["Lieutenant General Andorov"],	Z.RUINS_OF_AHNQIRAJ,			0.0,	0.0,	"Neutral")
+   	AddVendor(32287, 		L["Archmage Alvareaux"], 		Z.ALTERAC_MOUNTAINS, 			14.0, 	63.2, 	"Alliance")
+   	AddVendor(248197,		L["Gor'mak"],					Z.THE_BARRENS,					49.8,	29.6,	"Horde")
+   	AddVendor(254151, 		L["Vayn Moongaze"], 			Z.ZEPHRAS_ISLE, 				63.8, 	36.0, 	"Neutral")
+   	AddVendor(256730,		L["Stondry Darkhammer"],		Z.REDRIDGE_MOUNTAINS,			10.4,	74.6,	"Alliance")
+   	AddVendor(264078, 		L["Sutara Plainstalker"], 		Z.MULGORE, 						34.6, 	22.8, 	"Horde")
 
-	AddVendor(26081, 	L["High Admiral \"Shelly\" Jorrik"],Z.DUN_MOROGH, 					17.8,	74.6,	"Neutral",	V.WOTLK)
-
-	-----------------------------------------------------------------------
-	-- Cataclysm
-	-----------------------------------------------------------------------
-	AddVendor(1146,		L["Vharr"],							Z.NORTHERN_STRANGLETHORN,		38.7,	49.2,	"Horde",	V.CATA)
-	AddVendor(1471,		L["Jannos Ironwill"],				Z.ARATHI_HIGHLANDS,				40.8,	48.0,	"Alliance",	V.CATA)
-	AddVendor(2482,		L["Zarena Cromwind"],				Z.THE_CAPE_OF_STRANGLETHORN,	43.0,	70.7,	"Neutral",  V.CATA)
-	AddVendor(2483,		L["Jaquilina Dramet"],				Z.NORTHERN_STRANGLETHORN,		43.7,	23.1,	"Neutral",	V.CATA)
-	AddVendor(2843,		L["Jutak"],							Z.THE_CAPE_OF_STRANGLETHORN,	41.6,	74.0,	"Neutral",	V.CATA)
-	AddVendor(3356,		L["Sumi"],							Z.ORGRIMMAR,					75.8,	35.2,	"Horde",	V.CATA)
-	AddVendor(5512,		L["Kaita Deepforge"],				Z.STORMWIND_CITY,				63.2, 	37.6,	"Alliance",	V.CATA)
-	AddVendor(8176,		L["Gharash"],						Z.SWAMP_OF_SORROWS,				47.2, 	52.2,	"Horde",	V.CATA)
-	AddVendor(15176,	L["Vargus"],						Z.SILITHUS,						54.8, 	36.4,	"Neutral",	V.CATA)
-	AddVendor(38561,	L["Dramm Riverhorn"],				Z.UNGORO_CRATER,				43.46,	41.60,	"Neutral",	V.CATA)
-	AddVendor(45549,	L["Zido Helmbreaker"],				Z.ORGRIMMAR,					36.4,	83.0,	"Horde",	V.CATA)
-	AddVendor(46359,	L["Punra"],							Z.ORGRIMMAR,					45.0,	76.8,	"Horde",	V.CATA)
-	AddVendor(50129,	L["Daleohm"],						Z.WINTERSPRING,					58.0,	63.8,	"Neutral",	V.CATA)
-	AddVendor(50375,	L["Kuldar Steeltooth"],				Z.TWILIGHT_HIGHLANDS,			77.3,	53.1,	"Horde",	V.CATA)
-	AddVendor(50382,	L["Brundall Chiselgut"],			Z.TWILIGHT_HIGHLANDS,			79.1,	76.5,	"Alliance",	V.CATA)
-	AddVendor(52641,	L["Layna Karner"],					Z.DARNASSUS,					56.8,	52.5,	"Alliance",	V.CATA)
-
-	-----------------------------------------------------------------------
-	-- Mists of Pandaria
-	-----------------------------------------------------------------------
-	AddVendor(64599,	L["Ambersmith Zikk"],				Z.DREAD_WASTES,					55.0,	35.6,	"Neutral",	V.MOP)
-
-	-----------------------------------------------------------------------
-	-- Warlords of Dreanor
-	-----------------------------------------------------------------------
-	AddVendor(77359,	L["Auria Irondreamer"],				Z.LUNARFALL,					0.0,	0.0,	"Alliance",	V.WOD)  -- Alliance Garrison
-	AddVendor(79867,	L["Orgek Ironhand"],				Z.FROSTWALL,					0.0,	0.0,	"Horde",	V.WOD)  -- Horde Garrison
-	AddVendor(87062,	L["Royce Bigbeard"],				Z.STORMSHIELD,					49.0,	47.0,	"Alliance",	V.WOD) -- Alliance Ashran
-	AddVendor(87550,	L["Nonn Threeratchet"],				Z.WARSPEAR,						75.2,	37.6,	"Horde",	V.WOD) -- Horde Ashran
-
-	-----------------------------------------------------------------------
-	-- Legion
-	-----------------------------------------------------------------------
-	AddVendor(92184,	L["Imindril Spearsong"],			Z.DALARAN_BROKENISLES,			46.5,	26.8,	"Neutral",	V.LEGION)
-	AddVendor(92265,	L["Urael"],							Z.SURAMAR,						30.1,	53.3,	"Neutral",	V.LEGION)
+	AddVendor(264797, L["Aisarra Nightmeadow"], Z.MOUNT_HYJAL, 71.0, 51.2, "Neutral")
 
 	self.InitializeVendors = nil
 end
