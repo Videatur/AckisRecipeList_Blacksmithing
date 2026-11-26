@@ -50,6 +50,307 @@ function module:InitializeRecipes()
     -- Forever
     -------------------------------------------------------------------------------
 
+	-- Stormcarver -- 1252366
+	recipe = AddRecipe(1252366, Q.RARE)
+	recipe:SetSkillLevels(300, 300, 320, 330, 340)
+	recipe:SetRecipeItem(251469, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250617, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_AXE")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddRepVendor(FAC.TIMBERMAW_HOLD, REP.REVERED, 11557)
+
+	-- Bagh Nakh -- 1252367
+	recipe = AddRecipe(1252367, Q.RARE)
+	recipe:SetSkillLevels(300, 300, 320, 330, 340)
+	recipe:SetRecipeItem(251470, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250618, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddRepVendor(FAC.TIMBERMAW_HOLD, REP.REVERED, 11557)
+
+	-- Low-Background Truesilver Plates -- 435910
+	recipe = AddRecipe(435910, Q.RARE)
+	recipe:SetSkillLevels(200, 200, 200, 210, 220)
+	recipe:SetRecipeItem(215384, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(213376, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(217689)
+
+	-- Sterling Silver Boots -- 1252232
+	recipe = AddRecipe(1252232, Q.UNCOMMON)
+	recipe:SetSkillLevels(100, 100, 130, 145, 160)
+	recipe:SetRecipeItem(251335, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250483, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(2261)
+
+	-- Sterling Silver Leggings -- 1252233
+	recipe = AddRecipe(1252233, Q.UNCOMMON)
+	recipe:SetSkillLevels(105, 105, 135, 150, 165)
+	recipe:SetRecipeItem(251336, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250484, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(48)
+
+	-- Sterling Silver Gauntlet -- 1252234
+	recipe = AddRecipe(1252234, Q.UNCOMMON)
+	recipe:SetSkillLevels(105, 105, 135, 150, 165)
+	recipe:SetRecipeItem(251337, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250485, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(3711)
+
+	-- Sterling Silver Shoulders -- 1252235
+	recipe = AddRecipe(1252235, Q.UNCOMMON)
+	recipe:SetSkillLevels(110, 110, 140, 155, 170)
+	recipe:SetRecipeItem(251338, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250486, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(433)
+
+	-- Sterling Silver Breastplate -- 1252236
+	recipe = AddRecipe(1252236, Q.UNCOMMON)
+	recipe:SetSkillLevels(125, 125, 155, 170, 185)
+	recipe:SetRecipeItem(251339, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250487, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(10758)
+
+	-- Veteran's Chain Shirt -- 1252237
+	recipe = AddRecipe(1252237, Q.RARE)
+	recipe:SetSkillLevels(80, 80, 85, 85, 85)
+	recipe:SetRecipeItem(251340, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250488, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(11517)
+	recipe:AddWorldDrop(Z.RAGEFIRE_CHASM, Z.RUINS_OF_LORDAERON, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.WAILING_CAVERNS)
+
+	-- Guard's Chain Shirt -- 1252238
+	recipe = AddRecipe(1252238, Q.RARE)
+	recipe:SetSkillLevels(80, 80, 85, 85, 85)
+	recipe:SetRecipeItem(251341, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250489, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddWorldDrop(Z.RAGEFIRE_CHASM, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.WAILING_CAVERNS)
+
+	-- Protector's Chain Shirt -- 1252239
+	recipe = AddRecipe(1252239, Q.RARE)
+	recipe:SetSkillLevels(80, 80, 85, 85, 85)
+	recipe:SetRecipeItem(251342, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250490, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(1763)
+
+	-- Acolyte's Chain Shirt -- 1252240
+	recipe = AddRecipe(1252240, Q.RARE)
+	recipe:SetSkillLevels(80, 80, 85, 85, 85)
+	recipe:SetRecipeItem(251343, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250491, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(11517)
+
+	-- Hard Gold Cuirass -- 1252282
+	recipe = AddRecipe(1252282, Q.UNCOMMON)
+	recipe:SetSkillLevels(145, 145, 170, 182, 195)
+	recipe:SetRecipeItem(251385, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250533, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(4101)
+
+	-- Hard Gold Boots -- 1252283
+	recipe = AddRecipe(1252283, Q.UNCOMMON)
+	recipe:SetSkillLevels(150, 150, 175, 187, 200)
+	recipe:SetRecipeItem(251386, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250534, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(2586, 267065)
+
+	-- Hard Gold Coif -- 1252286
+	recipe = AddRecipe(1252286, Q.UNCOMMON)
+	recipe:SetSkillLevels(170, 170, 195, 207, 220)
+	recipe:SetRecipeItem(251389, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250537, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(2906)
+
+	-- Hard Gold Gauntlet -- 1252287
+	recipe = AddRecipe(1252287, Q.UNCOMMON)
+	recipe:SetSkillLevels(175, 175, 200, 212, 225)
+	recipe:SetRecipeItem(251390, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250538, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddRepVendor(FAC.MAGRAM_CLAN_CENTAUR, REP.HONORED, 253139)
+	recipe:AddRepVendor(FAC.GELKIS_CLAN_CENTAUR, REP.EXALTED, 253140)
+	recipe:AddQuest(92818)
+
+	-- Hard Gold Pauldrons -- 1252288
+	recipe = AddRecipe(1252288, Q.UNCOMMON)
+	recipe:SetSkillLevels(175, 175, 200, 212, 225)
+	recipe:SetRecipeItem(251391, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250539, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(2252)
+
+	-- Shining Mithril Boots -- 1252291
+	recipe = AddRecipe(1252291, Q.UNCOMMON)
+	recipe:SetSkillLevels(200, 200, 220, 230, 240)
+	recipe:SetRecipeItem(251394, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250542, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(2894)
+
+	-- Brass Knuckles -- 1252351
+	recipe = AddRecipe(1252351, Q.UNCOMMON)
+	recipe:SetSkillLevels(80, 80, 110, 125, 140)
+	recipe:SetRecipeItem(251454, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250602, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(11915)
+
+	-- Bronze Dory -- 1252352
+	recipe = AddRecipe(1252352, Q.UNCOMMON)
+	recipe:SetSkillLevels(95, 95, 125, 140, 155)
+	recipe:SetRecipeItem(251455, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250603, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_POLEARM")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(3727)
+
+	-- Iron Fists -- 1252353
+	recipe = AddRecipe(1252353, Q.UNCOMMON)
+	recipe:SetSkillLevels(130, 130, 155, 167, 180)
+	recipe:SetRecipeItem(251456, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250604, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(3771)
+
+	-- Steel Spear -- 1252354
+	recipe = AddRecipe(1252354, Q.UNCOMMON)
+	recipe:SetSkillLevels(160, 160, 185, 197, 210)
+	recipe:SetRecipeItem(251457, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250605, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_POLEARM")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(4151)
+
+	-- Iron Morningstar -- 1252355
+	recipe = AddRecipe(1252355, Q.UNCOMMON)
+	recipe:SetSkillLevels(165, 165, 190, 202, 215)
+	recipe:SetRecipeItem(251458, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250606, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_MACE")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddRepVendor(FAC.MAGRAM_CLAN_CENTAUR, REP.HONORED, 253139)
+	recipe:AddRepVendor(FAC.GELKIS_CLAN_CENTAUR, REP.EXALTED, 253140)
+	recipe:AddQuest(92818)
+
+	-- Mithril Shortsword -- 1252356
+	recipe = AddRecipe(1252356, Q.UNCOMMON)
+	recipe:SetSkillLevels(180, 180, 200, 210, 220)
+	recipe:SetRecipeItem(251459, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250607, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(4362)
+
+	-- Mithril Warhammer -- 1252357
+	recipe = AddRecipe(1252357, Q.UNCOMMON)
+	recipe:SetSkillLevels(190, 190, 210, 220, 230)
+	recipe:SetRecipeItem(251460, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250608, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_MACE")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(259860, 263440)
+	recipe:AddQuest(96026)
+
+	-- Mithril Claws -- 1252358
+	recipe = AddRecipe(1252358, Q.UNCOMMON)
+	recipe:SetSkillLevels(195, 195, 215, 225, 235)
+	recipe:SetRecipeItem(251461, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250609, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(2893)
+
+	-- Mithril Stiletto -- 1252360
+	recipe = AddRecipe(1252360, Q.UNCOMMON)
+	recipe:SetSkillLevels(210, 210, 230, 240, 250)
+	recipe:SetRecipeItem(251463, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250611, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(759)
+
+	-- Anvil -- 1263041
+	recipe = AddRecipe(1263041, Q.UNCOMMON)
+	recipe:SetSkillLevels(140, 140, 140, 140, 140)
+	recipe:SetRecipeItem(273086, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(279988, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(1763)
+
+	-- Rough Copper Chain Boots -- 1302598
+	recipe = AddRecipe(1302598, Q.UNCOMMON)
+	recipe:SetSkillLevels(50, 50, 60, 65, 70)
+	recipe:SetRecipeItem(277673, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(277672, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddQuest(95217, 96874)
+
+
+	-- Cracked Blacksmith Hammer -- 1317962
+	recipe = AddRecipe(1317962, Q.UNCOMMON)
+	recipe:SetSkillLevels(110, 110, 115, 117, 120)
+	recipe:SetRecipeItem(285289, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(285279, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_THROWN")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(248197, 256730)
+	recipe:AddMerchantFavor(30)
+
+	-- Mithril Blacksmith Hammer -- 1317963
+	recipe = AddRecipe(1317963, Q.UNCOMMON)
+	recipe:SetSkillLevels(195, 195, 200, 202, 205)
+	recipe:SetRecipeItem(285290, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(285280, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_THROWN")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.FRIENDLY, 256730)
+	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.FRIENDLY, 248197)
+	recipe:AddMerchantFavor(60)
+
+	-- Arcanite Blacksmith Hammer -- 1317964
+	recipe = AddRecipe(1317964, Q.RARE)
+	recipe:SetSkillLevels(270, 270, 275, 277, 280)
+	recipe:SetRecipeItem(285291, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(285281, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_THROWN")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.HONORED, 256730)
+	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.HONORED, 248197)
+	recipe:AddMerchantFavor(90)
+
+
 	-- Arcanite Rod -- 20201
 	recipe = AddRecipe(20201, Q.COMMON)
 	recipe:SetSkillLevels(250, 250, 250, 255, 260)
@@ -220,7 +521,7 @@ function module:InitializeRecipes()
 
 	-- Sharpening Wheel -- 1230171
 	recipe = AddRecipe(1230171, Q.COMMON)
-	recipe:SetSkillLevels(20, 20, 20, 22, 25)
+	recipe:SetSkillLevels(20, 20, 20, 20, 20)
 	recipe:SetCraftedItem(279944, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
@@ -452,6 +753,24 @@ function module:InitializeRecipes()
 	recipe:AddVendor(248197, 256730)
 	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_STOCKADE)
 	recipe:AddMerchantFavor(30)
+
+	-- Guard's Chain Leggings -- 1252243
+	recipe = AddRecipe(1252243, Q.RARE)
+	recipe:SetSkillLevels(95, 95, 100, 100, 100)
+	recipe:SetRecipeItem(251346, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250494, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(1696)
+
+	-- Crusader's Chain Leggings -- 1252246
+	recipe = AddRecipe(1252246, Q.RARE)
+	recipe:SetSkillLevels(95, 95, 100, 100, 100)
+	recipe:SetRecipeItem(251349, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250497, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(1696)
 
 	-- Protector's Silvered Chain Leggings -- 1252274
 	recipe = AddRecipe(1252274, Q.RARE)
@@ -768,8 +1087,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(250581, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.FRIENDLY, 248197)
-	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.FRIENDLY, 256730)
+	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.HONORED, 248197)
+	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.HONORED, 256730)
 	recipe:AddMerchantFavor(90)
 
 	-- Sentinel's Wristguards -- 1252331
@@ -779,8 +1098,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(250582, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.FRIENDLY, 248197)
-	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.FRIENDLY, 256730)
+	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.HONORED, 248197)
+	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.HONORED, 256730)
 	recipe:AddMerchantFavor(90)
 
 	-- Warder's Wristguards -- 1252332
@@ -790,8 +1109,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(250583, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.FRIENDLY, 248197)
-	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.FRIENDLY, 256730)
+	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.HONORED, 248197)
+	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.HONORED, 256730)
 	recipe:AddMerchantFavor(90)
 
 	-- Prefect's Wristguards -- 1252333
@@ -801,8 +1120,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(250584, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.FRIENDLY, 248197)
-	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.FRIENDLY, 256730)
+	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.HONORED, 248197)
+	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.HONORED, 256730)
 	recipe:AddMerchantFavor(90)
 
 	-- Justicar's Wristguards -- 1252334
@@ -812,8 +1131,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(250585, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.FRIENDLY, 248197)
-	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.FRIENDLY, 256730)
+	recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.HONORED, 248197)
+	recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.HONORED, 256730)
 	recipe:AddMerchantFavor(90)
 
 	-- Enriched Thorium Breastplate -- 1252344
@@ -1027,12 +1346,403 @@ function module:InitializeRecipes()
 	recipe:AddRepVendor(FAC.NIGHTCLAW_DRUIDS, REP.FRIENDLY, 254151)
 
 	------------------------------------------------------------------------------
+
+
+    -- Hard Gold Bracers -- 1252284
+    recipe = AddRecipe(1252284, Q.UNCOMMON)
+    recipe:SetSkillLevels(160, 160, 185, 197, 210)
+    recipe:SetRecipeItem(251387, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250535, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_WRIST")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(4711)
+
+    -- Hard Gold Leggings -- 1252285
+    recipe = AddRecipe(1252285, Q.UNCOMMON)
+    recipe:SetSkillLevels(165, 165, 190, 202, 215)
+    recipe:SetRecipeItem(251388, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250536, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(937)
+
+    -- Mithril Claymore -- 1252359
+    recipe = AddRecipe(1252359, Q.UNCOMMON)
+    recipe:SetSkillLevels(195, 195, 215, 225, 235)
+    recipe:SetRecipeItem(251462, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250610, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_SWORD")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(5249)
+
+    -- Shining Mithril Breastplate -- 1252289
+    recipe = AddRecipe(1252289, Q.UNCOMMON)
+    recipe:SetSkillLevels(195, 195, 215, 225, 235)
+    recipe:SetRecipeItem(251392, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250540, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(11559)
+
+    -- Shining Mithril Pauldrons -- 1252290
+    recipe = AddRecipe(1252290, Q.UNCOMMON)
+    recipe:SetSkillLevels(195, 195, 215, 225, 235)
+    recipe:SetRecipeItem(251393, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250541, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(2596)
+
+    -- Charged Mithril Battleaxe -- 1252361
+    recipe = AddRecipe(1252361, Q.UNCOMMON)
+    recipe:SetSkillLevels(215, 215, 235, 245, 255)
+    recipe:SetRecipeItem(251464, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250612, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_AXE")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(5232)
+
+    -- Shining Mithril Helm -- 1252292
+    recipe = AddRecipe(1252292, Q.UNCOMMON)
+    recipe:SetSkillLevels(215, 215, 235, 245, 255)
+    recipe:SetRecipeItem(251395, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250543, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(1907)
+
+    -- Shining Mithril Gauntlet -- 1252294
+    recipe = AddRecipe(1252294, Q.UNCOMMON)
+    recipe:SetSkillLevels(220, 220, 240, 250, 260)
+    recipe:SetRecipeItem(251397, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250545, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(7855)
+
+    -- Shining Mithril Pants -- 1252293
+    recipe = AddRecipe(1252293, Q.UNCOMMON)
+    recipe:SetSkillLevels(220, 220, 240, 250, 260)
+    recipe:SetRecipeItem(251396, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250544, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(2653)
+
+    -- Blessed Plate Boots -- 1252336
+    recipe = AddRecipe(1252336, Q.UNCOMMON)
+    recipe:SetSkillLevels(240, 240, 260, 270, 280)
+    recipe:SetRecipeItem(251439, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250587, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_FEET")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(8566)
+
+    -- Blessed Plate Pauldrons -- 1252335
+    recipe = AddRecipe(1252335, Q.UNCOMMON)
+    recipe:SetSkillLevels(240, 240, 260, 270, 280)
+    recipe:SetRecipeItem(251438, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250586, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(6117)
+
+    -- Blessed Plate Gauntlet -- 1252337
+    recipe = AddRecipe(1252337, Q.UNCOMMON)
+    recipe:SetSkillLevels(245, 245, 265, 275, 285)
+    recipe:SetRecipeItem(251440, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250588, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(7155)
+
+    -- Blessed Plate Bracers -- 1252339
+    recipe = AddRecipe(1252339, Q.UNCOMMON)
+    recipe:SetSkillLevels(255, 255, 275, 285, 295)
+    recipe:SetRecipeItem(251442, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250590, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_WRIST")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(7108)
+
+    -- Imperial Plate Gauntlets -- 1252338
+    recipe = AddRecipe(1252338, Q.UNCOMMON)
+    recipe:SetSkillLevels(255, 255, 275, 285, 295)
+    recipe:SetRecipeItem(251441, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250589, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(6199)
+
+    -- Blessed Plate Belt -- 1252341
+    recipe = AddRecipe(1252341, Q.UNCOMMON)
+    recipe:SetSkillLevels(270, 270, 290, 300, 310)
+    recipe:SetRecipeItem(251444, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250592, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_WAIST")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(8600)
+
+    -- Blessed Plate Leggings -- 1252340
+    recipe = AddRecipe(1252340, Q.UNCOMMON)
+    recipe:SetSkillLevels(270, 270, 290, 300, 310)
+    recipe:SetRecipeItem(251443, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250591, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(7451)
+
+    -- Blessed Plate Helm -- 1252342
+    recipe = AddRecipe(1252342, Q.UNCOMMON)
+    recipe:SetSkillLevels(275, 275, 295, 305, 315)
+    recipe:SetRecipeItem(251445, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250593, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(1834)
+
+    -- Blessed Plate Chest -- 1252343
+    recipe = AddRecipe(1252343, Q.UNCOMMON)
+    recipe:SetSkillLevels(280, 280, 300, 310, 320)
+    recipe:SetRecipeItem(251446, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250594, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(249220)
+
+	-- Crusader's Chain Shirt -- 1252241
+	recipe = AddRecipe(1252241, Q.RARE)
+	recipe:SetSkillLevels(80, 80, 85, 85, 85)
+	recipe:SetRecipeItem(251344, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250492, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(646, 3671, 3864, 3865, 11518, 11519, 11520)
+
+	-- Veteran's Chain Leggings -- 1252242
+	recipe = AddRecipe(1252242, Q.RARE)
+	recipe:SetSkillLevels(95, 95, 100, 100, 100)
+	recipe:SetRecipeItem(251345, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250493, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(3670, 3927)
+
+	-- Protector's Chain Leggings -- 1252244
+	recipe = AddRecipe(1252244, Q.RARE)
+	recipe:SetSkillLevels(95, 95, 100, 100, 100)
+	recipe:SetRecipeItem(251347, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250495, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(3674, 3872, 3886, 4274, 4275, 4279)
+
+	-- Acolyte's Chain Leggings -- 1252245
+	recipe = AddRecipe(1252245, Q.RARE)
+	recipe:SetSkillLevels(95, 95, 100, 100, 100)
+	recipe:SetRecipeItem(251348, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250496, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(3670, 3673, 3886, 5775)
+
+	-- Veteran's Chain Helm -- 1252247
+	recipe = AddRecipe(1252247, Q.RARE)
+	recipe:SetSkillLevels(125, 125, 130, 130, 130)
+	recipe:SetRecipeItem(251350, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250498, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(1717, 3983, 4428, 6235, 7800, 12902)
+
+	-- Guard's Chain Helm -- 1252248
+	recipe = AddRecipe(1252248, Q.RARE)
+	recipe:SetSkillLevels(125, 125, 130, 130, 130)
+	recipe:SetRecipeItem(251351, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250499, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(1716, 4421, 4428, 6168, 7079)
+
+	-- Protector's Chain Helm -- 1252249
+	recipe = AddRecipe(1252249, Q.RARE)
+	recipe:SetSkillLevels(125, 125, 130, 130, 130)
+	recipe:SetRecipeItem(251352, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250500, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(3974, 4424, 4830, 6229, 7361, 12876)
+
+	-- Acolyte's Chain Helm -- 1252250
+	recipe = AddRecipe(1252250, Q.RARE)
+	recipe:SetSkillLevels(125, 125, 130, 130, 130)
+	recipe:SetRecipeItem(251353, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250501, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(1666, 3974, 4424, 4829, 6229, 12902)
+
+	-- Crusader's Chain Helm -- 1252251
+	recipe = AddRecipe(1252251, Q.RARE)
+	recipe:SetSkillLevels(125, 125, 130, 130, 130)
+	recipe:SetRecipeItem(251354, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250502, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(4420, 4422, 4830, 4832, 12876, 12902)
+
+	-- Officer's Boots -- 1252295
+	recipe = AddRecipe(1252295, Q.RARE)
+	recipe:SetSkillLevels(200, 200, 205, 205, 205)
+	recipe:SetRecipeItem(251398, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250546, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(6910, 7355)
+
+	-- Sentinel's Boots -- 1252296
+	recipe = AddRecipe(1252296, Q.RARE)
+	recipe:SetSkillLevels(200, 200, 205, 205, 205)
+	recipe:SetRecipeItem(251399, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250547, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(7206)
+
+	-- Warder's Boots -- 1252297
+	recipe = AddRecipe(1252297, Q.RARE)
+	recipe:SetSkillLevels(200, 200, 205, 205, 205)
+	recipe:SetRecipeItem(251400, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250548, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(3976, 4542)
+
+	-- Prefect's Boots -- 1252298
+	recipe = AddRecipe(1252298, Q.RARE)
+	recipe:SetSkillLevels(200, 200, 205, 205, 205)
+	recipe:SetRecipeItem(251401, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250549, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(6487, 7604)
+
+	-- Justicar's Boots -- 1252299
+	recipe = AddRecipe(1252299, Q.RARE)
+	recipe:SetSkillLevels(200, 200, 205, 205, 205)
+	recipe:SetRecipeItem(251402, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250550, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(3977)
+
+	-- Officer's Gloves -- 1252300
+	recipe = AddRecipe(1252300, Q.RARE)
+	recipe:SetSkillLevels(250, 250, 255, 255, 255)
+	recipe:SetRecipeItem(251403, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250551, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(12201, 12225, 13596)
+
+	-- Sentinel's Gloves -- 1252301
+	recipe = AddRecipe(1252301, Q.RARE)
+	recipe:SetSkillLevels(250, 250, 255, 255, 255)
+	recipe:SetRecipeItem(251404, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250552, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(7267, 7271, 7273, 9537, 12236)
+
+	-- Warder's Gloves -- 1252302
+	recipe = AddRecipe(1252302, Q.RARE)
+	recipe:SetSkillLevels(250, 250, 255, 255, 255)
+	recipe:SetRecipeItem(251405, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250553, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(2748, 5709, 5710, 5715, 5719, 5721, 7267, 7271, 7272, 7273, 7275, 7796, 7797, 8127, 8440, 8580, 9018, 9024, 9025, 9056, 9319, 9499, 9502, 9537, 9543, 12201, 12203, 12225, 12236, 12237, 12258, 13282, 13596, 13601)
+
+	-- Prefect's Gloves -- 1252303
+	recipe = AddRecipe(1252303, Q.RARE)
+	recipe:SetSkillLevels(250, 250, 255, 255, 255)
+	recipe:SetRecipeItem(251406, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250554, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(7797)
+
+	-- Justicar's Gloves -- 1252304
+	recipe = AddRecipe(1252304, Q.RARE)
+	recipe:SetSkillLevels(250, 250, 255, 255, 255)
+	recipe:SetRecipeItem(251407, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250555, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(9024, 9319, 12203, 13596)
+
+	-- Thorium Poleaxe -- 1252364
+	recipe = AddRecipe(1252364, Q.RARE)
+	recipe:SetSkillLevels(260, 260, 280, 292, 305)
+	recipe:SetRecipeItem(251467, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250615, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_POLEARM")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(8893)
+
+	-- Bold Dirk -- 1252365
+	recipe = AddRecipe(1252365, Q.RARE)
+	recipe:SetSkillLevels(270, 270, 290, 300, 310)
+	recipe:SetRecipeItem(251468, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250616, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(266901)
+	recipe:AddQuest(92189)
+
+	-- Stalwart Helm -- 1252348
+	recipe = AddRecipe(1252348, Q.EPIC)
+	recipe:SetSkillLevels(300, 300, 320, 330, 340)
+	recipe:SetRecipeItem(251451, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250599, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(9583)
+
+	-- Martyr's Legplates -- 1252349
+	recipe = AddRecipe(1252349, Q.EPIC)
+	recipe:SetSkillLevels(300, 300, 320, 330, 340)
+	recipe:SetRecipeItem(251452, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250600, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(11441)
+
+	-- Breastplate of Salvation -- 1252350
+	recipe = AddRecipe(1252350, Q.EPIC)
+	recipe:SetSkillLevels(300, 300, 320, 330, 340)
+	recipe:SetRecipeItem(251453, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(250601, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(247248)
+
+	-- Master Forge -- 1263073
+	recipe = AddRecipe(1263073, Q.UNCOMMON)
+	recipe:SetSkillLevels(300, 300, 300, 300, 300)
+	recipe:SetRecipeItem(273113, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(279955, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddMobDrop(8983)
+
+
 	-- Classic
 	------------------------------------------------------------------------------
 
 	-- Rough Sharpening Stone -- 2660
 	recipe = AddRecipe(2660, Q.COMMON)
-	recipe:SetSkillLevels(15, 15, 15, 35, 55)
+	recipe:SetSkillLevels(1, 1, 15, 35, 55)
 	recipe:SetCraftedItem(2862, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
@@ -1093,7 +1803,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(2864, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RUINS_OF_LORDAERON, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Rough Bronze Leggings -- 2668
 	recipe = AddRecipe(2668, Q.COMMON)
@@ -1126,7 +1836,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(2869, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Heavy Sharpening Stone -- 2674
 	recipe = AddRecipe(2674, Q.COMMON)
@@ -1264,7 +1974,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3492, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_MACE")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Copper Chain Boots -- 3319
 	recipe = AddRecipe(3319, Q.COMMON)
@@ -1290,7 +2000,7 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
 	recipe:AddQuest(1578)
-	recipe:AddWorldDrop(Z.RAGEFIRE_CHASM, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.RAGEFIRE_CHASM, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Runed Copper Gauntlets -- 3323
 	recipe = AddRecipe(3323, Q.COMMON)
@@ -1319,7 +2029,7 @@ function module:InitializeRecipes()
 
 	-- Coarse Grinding Stone -- 3326
 	recipe = AddRecipe(3326, Q.COMMON)
-	recipe:SetSkillLevels(50, 50, 50, 62, 75)
+	recipe:SetSkillLevels(50, 50, 50, 70, 90)
 	recipe:SetCraftedItem(3478, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
@@ -1340,7 +2050,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3481, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Silvered Bronze Boots -- 3331
 	recipe = AddRecipe(3331, Q.COMMON)
@@ -1365,7 +2075,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3484, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Green Iron Gauntlets -- 3336
 	recipe = AddRecipe(3336, Q.UNCOMMON)
@@ -1374,7 +2084,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3485, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Heavy Grinding Stone -- 3337
 	recipe = AddRecipe(3337, Q.COMMON)
@@ -1408,7 +2118,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3850, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Solid Iron Maul -- 3494
 	recipe = AddRecipe(3494, Q.COMMON)
@@ -1426,7 +2136,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3852, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_MACE")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Moonsteel Broadsword -- 3496
 	recipe = AddRecipe(3496, Q.COMMON)
@@ -1444,7 +2154,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3854, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_SWORD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Massive Iron Axe -- 3498
 	recipe = AddRecipe(3498, Q.COMMON)
@@ -1462,7 +2172,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3856, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_AXE")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_STOCKADE, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Green Iron Bracers -- 3501
 	recipe = AddRecipe(3501, Q.COMMON)
@@ -1496,7 +2206,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3840, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Golden Scale Shoulders -- 3505
 	recipe = AddRecipe(3505, Q.RARE)
@@ -1505,7 +2215,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3841, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.GNOMEREGAN, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Green Iron Leggings -- 3506
 	recipe = AddRecipe(3506, Q.COMMON)
@@ -1538,7 +2248,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3845, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_STOCKADE, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Polished Steel Boots -- 3513
 	recipe = AddRecipe(3513, Q.UNCOMMON)
@@ -1547,7 +2257,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3846, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_STOCKADE, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Golden Scale Boots -- 3515
 	recipe = AddRecipe(3515, Q.RARE)
@@ -1556,7 +2266,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(3847, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.ALTERAC_MOUNTAINS, Z.BADLANDS, Z.GNOMEREGAN, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Pearl-handled Dagger -- 6517
 	recipe = AddRecipe(6517, Q.COMMON)
@@ -1582,7 +2292,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(6042, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Iron Counterweight -- 7222
 	recipe = AddRecipe(7222, Q.UNCOMMON)
@@ -1591,7 +2301,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(6043, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Golden Scale Bracers -- 7223
 	recipe = AddRecipe(7223, Q.COMMON)
@@ -1607,7 +2317,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(6041, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddWorldDrop(Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.ULDAMAN, Z.BADLANDS, Z.DUSTWALLOW_MARSH)
+	recipe:AddWorldDrop(Z.BADLANDS, Z.DUSTWALLOW_MARSH, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.ULDAMAN)
 
 	-- Heavy Copper Maul -- 7408
 	recipe = AddRecipe(7408, Q.COMMON)
@@ -1758,7 +2468,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7921, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Steel Plate Helm -- 9935
 	recipe = AddRecipe(9935, Q.COMMON)
@@ -1822,15 +2532,17 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7938, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(7230)
+	recipe:AddTrainer(5164, 7230, 11177)
 
 
 	-- Orcish War Leggings -- 9957
 	recipe = AddRecipe(9957, Q.COMMON)
 	recipe:SetSkillLevels(230, 230, 230, 235, 245)
+	recipe:SetRecipeItem(7994, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(7929, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
+	recipe:AddFilters(F.HORDE, F.DPS)
+	recipe:AddQuest(2756)
 
 	-- Heavy Mithril Breastplate -- 9959
 	recipe = AddRecipe(9959, Q.COMMON)
@@ -1838,7 +2550,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7930, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(2836)
+	recipe:AddTrainer(2836, 3355, 4258)
 
 	-- Mithril Coif -- 9961
 	recipe = AddRecipe(9961, Q.COMMON)
@@ -1855,7 +2567,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7969, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_MONASTERY, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_MONASTERY, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Mithril Scale Shoulders -- 9966
 	recipe = AddRecipe(9966, Q.RARE)
@@ -1889,6 +2601,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7935, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER, F.TANK)
+	recipe:AddQuest(2773)
 
 
 	-- Truesilver Breastplate -- 9974
@@ -1897,7 +2610,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7939, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(7230)
+	recipe:AddTrainer(5164, 7230, 11177)
 
 
 	-- Ornate Mithril Boots -- 9979
@@ -1906,6 +2619,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7936, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.TANK)
+	recipe:AddQuest(2772)
 
 
 	-- Ornate Mithril Helm -- 9980
@@ -1914,6 +2628,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7937, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
+	recipe:AddQuest(2771)
 
 
 	-- Copper Claymore -- 9983
@@ -1972,7 +2687,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7943, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Big Black Mace -- 10001
 	recipe = AddRecipe(10001, Q.COMMON)
@@ -1980,14 +2695,15 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7945, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_MACE")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(2836)
+	recipe:AddTrainer(2836, 3355, 4258)
 
 	-- The Shatterer -- 10003
 	recipe = AddRecipe(10003, Q.COMMON)
-	recipe:SetSkillLevels(235, 235, 235, 247, 260)
+	recipe:SetSkillLevels(210, 210, 235, 247, 260)
 	recipe:SetCraftedItem(7954, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_MACE")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddTrainer(7231, 7232, 11146, 11178)
 
 
 	-- Dazzling Mithril Rapier -- 10005
@@ -1997,15 +2713,16 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(7944, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.SCARLET_MONASTERY, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Phantom Blade -- 10007
 	recipe = AddRecipe(10007, Q.RARE)
-	recipe:SetSkillLevels(270, 270, 270, 282, 295)
+	recipe:SetSkillLevels(220, 220, 245, 257, 270)
 	recipe:SetRecipeItem(74274, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(7961, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddTrainer(7231, 7232, 11146, 11178)
 	recipe:AddWorldDrop(Z.STRATHOLME)
 
 	-- Runed Mithril Hammer -- 10009
@@ -2019,11 +2736,12 @@ function module:InitializeRecipes()
 
 	-- Blight -- 10011
 	recipe = AddRecipe(10011, Q.RARE)
-	recipe:SetSkillLevels(250, 250, 275, 287, 300)
+	recipe:SetSkillLevels(225, 225, 250, 262, 275)
 	recipe:SetRecipeItem(142337, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(7959, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_POLEARM")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddTrainer(7231, 7232, 11146, 11178)
 	recipe:AddWorldDrop(Z.STRATHOLME)
 
 	-- Ebon Shiv -- 10013
@@ -2037,10 +2755,11 @@ function module:InitializeRecipes()
 
 	-- Truesilver Champion -- 10015
 	recipe = AddRecipe(10015, Q.COMMON)
-	recipe:SetSkillLevels(260, 260, 260, 272, 285)
+	recipe:SetSkillLevels(235, 235, 260, 272, 285)
 	recipe:SetCraftedItem(7960, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_SWORD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddTrainer(7231, 7232, 11146, 11178)
 
 
 	-- Inlaid Mithril Cylinder -- 11454
@@ -2069,7 +2788,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(10423, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Rough Copper Vest -- 12260
 	recipe = AddRecipe(12260, Q.COMMON)
@@ -2120,7 +2839,7 @@ function module:InitializeRecipes()
 	-- Dark Iron Plate -- 15296
 	recipe = AddRecipe(15296, Q.RARE)
 	recipe:SetSkillLevels(260, 260, 285, 290, 300)
-	recipe:SetRecipeItem(11612, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(11612, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(11604, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
@@ -2141,7 +2860,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12260, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.HEALER)
-	recipe:AddWorldDrop(Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.ULDAMAN, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.DUSTWALLOW_MARSH, Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.STRANGLETHORN_VALE, Z.TANARIS, Z.ULDAMAN, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Dense Grinding Stone -- 16639
 	recipe = AddRecipe(16639, Q.COMMON)
@@ -2174,7 +2893,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12405, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Thorium Belt -- 16643
 	recipe = AddRecipe(16643, Q.COMMON)
@@ -2183,7 +2902,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12406, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Thorium Bracers -- 16644
 	recipe = AddRecipe(16644, Q.COMMON)
@@ -2192,7 +2911,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12408, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Radiant Belt -- 16645
 	recipe = AddRecipe(16645, Q.UNCOMMON)
@@ -2228,7 +2947,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12415, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Imperial Plate Bracers -- 16649
 	recipe = AddRecipe(16649, Q.COMMON)
@@ -2247,7 +2966,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12645, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.ULDAMAN, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Thorium Boots -- 16652
 	recipe = AddRecipe(16652, Q.COMMON)
@@ -2256,7 +2975,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12409, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Thorium Helm -- 16653
 	recipe = AddRecipe(16653, Q.COMMON)
@@ -2265,7 +2984,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12410, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Radiant Gloves -- 16654
 	recipe = AddRecipe(16654, Q.UNCOMMON)
@@ -2274,7 +2993,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12418, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Fiery Plate Gauntlets -- 16655
 	recipe = AddRecipe(16655, Q.RARE)
@@ -2293,7 +3012,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12419, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Imperial Plate Boots -- 16657
 	recipe = AddRecipe(16657, Q.COMMON)
@@ -2339,7 +3058,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(12414, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Imperial Plate Chest -- 16663
 	recipe = AddRecipe(16663, Q.COMMON)
@@ -2551,7 +3270,7 @@ function module:InitializeRecipes()
 	-- Corruption -- 16985
 	recipe = AddRecipe(16985, Q.COMMON)
 	recipe:SetSkillLevels(265, 290, 290, 302, 315)
-	recipe:SetRecipeItem(12830, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(12830, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(12782, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_SWORD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
@@ -2734,24 +3453,6 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("BLACKSMITHING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
 	recipe:AddWorldDrop(Z.MOLTEN_CORE, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
-
-	-- Heavy Timbermaw Belt -- 23628
-	recipe = AddRecipe(23628, Q.COMMON)
-	recipe:SetSkillLevels(265, 265, 290, 295, 305)
-	recipe:SetRecipeItem(19202, "BIND_ON_PICKUP")
-	recipe:SetCraftedItem(19043, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddRepVendor(FAC.TIMBERMAW_HOLD, REP.HONORED, 11557)
-
-	-- Heavy Timbermaw Boots -- 23629
-	recipe = AddRecipe(23629, Q.COMMON)
-	recipe:SetSkillLevels(295, 300, 300, 310, 320)
-	recipe:SetRecipeItem(19204, "BIND_ON_PICKUP")
-	recipe:SetCraftedItem(19048, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_FEET")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddRepVendor(FAC.TIMBERMAW_HOLD, REP.REVERED, 11557)
 
 	-- Girdle of the Dawn -- 23632
 	recipe = AddRecipe(23632, Q.COMMON)
@@ -2998,7 +3699,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(22384, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_MACE")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKWING_LAIR, Z.KARAZHAN_CRYPTS, Z.NAXXRAMAS, Z.SCARLET_ENCLAVE, Z.STORM_CLIFFS, Z.THE_TAINTED_SCAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.KARAZHAN_CRYPTS, Z.NAXXRAMAS, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.THE_TAINTED_SCAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Sageblade -- 27832
 	recipe = AddRecipe(27832, Q.EPIC)
@@ -3007,7 +3708,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(22383, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKWING_LAIR, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.STORM_CLIFFS, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+	recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Icebane Breastplate -- 28242
 	recipe = AddRecipe(28242, Q.EPIC)
@@ -3063,231 +3764,220 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.TANK)
 	recipe:AddRepVendor(FAC.CENARION_CIRCLE, REP.FRIENDLY, 15176)
 
-
-
-
-
-
-
-	-- Guardians of Hyjal: Aisarra Nightmeadow (Forever).
-	-- Verified item/spell tooltips: tools/hyjal-reputation/facts.json in the core addon.
-	-- Friendly is the published minimum; other slots also need an unlock.
-	-- Their final standing is unpublished, so display the special requirement.
-
 	-- Justice Leggings -- 1292945
 	recipe = AddRecipe(1292945, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273976, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273908, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:AddCustom("HYJAL_FRIENDLY_ADVICE")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Gauntlets -- 1292946
 	recipe = AddRecipe(1292946, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273977, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273909, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_GLOVES_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Spaulders -- 1292947
 	recipe = AddRecipe(1292947, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273978, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273910, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_SHOULDERS_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Greaves -- 1292948
 	recipe = AddRecipe(1292948, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273979, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273911, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_BOOTS_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Legplates -- 1292949
 	recipe = AddRecipe(1292949, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273980, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273912, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:AddCustom("HYJAL_FRIENDLY_ADVICE")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Gloves -- 1292950
 	recipe = AddRecipe(1292950, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273981, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273913, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_GLOVES_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Epaulets -- 1292951
 	recipe = AddRecipe(1292951, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273982, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273914, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_SHOULDERS_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Treads -- 1292952
 	recipe = AddRecipe(1292952, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273983, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273915, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_BOOTS_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Legguards -- 1292953
 	recipe = AddRecipe(1292953, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273984, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273916, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:AddCustom("HYJAL_FRIENDLY_ADVICE")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Handguards -- 1292954
 	recipe = AddRecipe(1292954, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273985, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273917, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_GLOVES_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Pauldrons -- 1292955
 	recipe = AddRecipe(1292955, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273986, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273918, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_SHOULDERS_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Justice Sabatons -- 1292956
 	recipe = AddRecipe(1292956, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(273987, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273919, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.PALADIN)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_BOOTS_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Legplates of Glory -- 1292981
 	recipe = AddRecipe(1292981, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(274012, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273944, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.WARRIOR)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:AddCustom("HYJAL_FRIENDLY_ADVICE")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Gauntlets of Glory -- 1292982
 	recipe = AddRecipe(1292982, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(274013, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273945, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.WARRIOR)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_GLOVES_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Shoulders of Glory -- 1292983
 	recipe = AddRecipe(1292983, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(274014, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273946, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.WARRIOR)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_SHOULDERS_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Greaves of Glory -- 1292984
 	recipe = AddRecipe(1292984, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(274015, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273947, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.WARRIOR)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_BOOTS_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Legguards of Glory -- 1292985
 	recipe = AddRecipe(1292985, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(274016, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273948, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.WARRIOR)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:AddCustom("HYJAL_FRIENDLY_ADVICE")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Handguards of Glory -- 1292986
 	recipe = AddRecipe(1292986, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(274017, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273949, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.WARRIOR)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_GLOVES_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Pauldrons of Glory -- 1292987
 	recipe = AddRecipe(1292987, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(274018, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273950, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.WARRIOR)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_SHOULDERS_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	-- Sabatons of Glory -- 1292988
 	recipe = AddRecipe(1292988, Q.EPIC)
-	recipe:SetRequiredSkillLevel(300)
+	recipe:SetSkillLevels(300, 300, 320, 325, 330)
 	recipe:SetRecipeItem(274019, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(273951, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.WARRIOR)
-	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 	recipe:SetRepVendorStandingUnknown(FAC.GUARDIANS_OF_HYJAL)
 	recipe:AddCustom("HYJAL_BOOTS_SPECIALIZATION")
+	recipe:AddRepVendor(FAC.GUARDIANS_OF_HYJAL, REP.FRIENDLY, 264797)
 
 	self.InitializeRecipes = nil
 end
